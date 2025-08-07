@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</head>
+<body>
+  <header class="header">
+    <a href="#" class="logo">Portfolio</a>
+    <nav class="navbar">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section class="home" id="home">
+    <div class="home-content-wrapper">
+      <div class="home-content">
+        <h3>Hello, It's Me</h3>
+        <h1>SAMRIDHYA ACHARYA</h1>
+        <h3>And I am a <span class="text"></span></h3>
+        <p>
+          I'm a Web Developer with a passion for creating modern and responsive websites.
+          <br>I specialize in building user-friendly interfaces and seamless user experiences.
+        </p>
+
+        <div class="quote-of-day">
+          <i class='bx bxs-quote-alt-left'></i> 
+          <span id="daily-quote">"Creativity is intelligence having fun."</span>
+        </div>
+
+        <div class="learning-badge">
+          📚 Currently learning: <strong>Next.js</strong>
+        </div>
+
+        <div class="home-sci" style="margin-bottom: 20px;">
+          <a href="https://facebook.com/yourusername" target="_blank"><i class='bx bxl-facebook'></i></a>
+          <a href="https://instagram.com/yourusername" target="_blank"><i class='bx bxl-instagram'></i></a>
+          <a href="https://wa.me/919876543210" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+          <a href="https://snapchat.com/add/yourusername" target="_blank"><i class='bx bxl-snapchat'></i></a>
+        </div>
+
+        <!-- Push Button Lower -->
+        <a href="#about" class="btn-box glowing-btn home-btn">
+          <i class='bx bx-right-arrow-alt'></i> Dive into my story
+        </a>
+      </div>
+
+      <div class="home-image">
+        <img src="wallpaper3.0.png" alt="Profile Picture">
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="about-content">
+      <h2>About Me</h2>
+      <p>
+        Hi, I'm Samridhya Acharya — a creative web developer based in India. I enjoy turning complex problems into simple, beautiful, and intuitive designs.
+      </p>
+
+      <blockquote style="font-style: italic; margin-top: 20px; color: #ccc;">
+        “Code is not just what I do, it's how I think. Every bug teaches me more than any tutorial ever could.”
+      </blockquote>
+
+      <h3 style="margin-top: 30px;">🎯 Fun Fact About Me</h3>
+      <p>
+        I once built a mini e-commerce site in a single weekend using just HTML, CSS, and vanilla JavaScript — just to challenge myself.
+      </p>
+
+      <h3>Skills</h3>
+      <ul style="list-style: none; padding-left: 0;">
+        <li>💻 HTML, CSS, JavaScript</li>
+        <li>⚛️ React, Node.js</li>
+        <li>🎨 UI/UX Design, Responsive Design</li>
+        <li>🛠 MongoDB, Express</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section class="portfolio" id="portfolio">
+    <div class="portfolio-content">
+      <h2>My Projects</h2>
+      <div class="portfolio-grid">
+        <div class="portfolio-item">
+          <h4>📱 Food Ordering App</h4>
+          <p>A React + Firebase food ordering app with real-time order tracking and cart.</p>
+        </div>
+        <div class="portfolio-item">
+          <h4>🛍 E-Commerce Website</h4>
+          <p>MERN stack project with product listings, login system, and shopping cart.</p>
+        </div>
+        <div class="portfolio-item">
+          <h4>📰 Blog Platform</h4>
+          <p>A blog platform where users can post, edit, and delete articles with Markdown.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="contact-content">
+      <h2>Contact Me</h2>
+      <p>Have a question, idea, or just want to say hi? Fill the form below and I’ll get back to you!</p>
+      <form id="contact-form">
+        <input type="text" name="from_name" placeholder="Your Name" required>
+        <input type="email" name="email_id" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn-box">Send Message</button>
+      </form>
+      <p id="form-status"></p>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
